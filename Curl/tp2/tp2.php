@@ -140,9 +140,9 @@ if (sizeof($communes) == 1) {
             <div class="col-xs-4 cadresCom hauteurMin">
                 <form action="tp2.php" method="GET">
                     <br/>
-                    <label for="region">Région (<?php echo sizeof($regions) ?>) : </label>
+                    <label for="region">R&eacute;gion (<?php echo sizeof($regions) ?>) : </label>
                     <select name="region" class="form-control">
-                        <option value="">Choisir une région</option>
+                        <option value="">Choisir une r&eacute;gion</option>
                         <?php
                         sort($regions);
                         foreach ($regions as $regionListe) {
@@ -151,7 +151,7 @@ if (sizeof($communes) == 1) {
                         ?>
                     </select>
                     <br>
-                    <button type="submit" class="btn btn-block btn-primary">Afficher les départements de la région
+                    <button type="submit" class="btn btn-block btn-primary">Afficher les d&eacute;partements de la r&eacute;gion
                     </button>
                 </form>
             </div>
@@ -171,7 +171,7 @@ if (sizeof($communes) == 1) {
                         <!-- On garde la région selectionné -->
                         <input hidden value="<?php echo $regionSelectionner ?>" name="region">
                         <!-- On garde la région selectionné -->
-                        <label for="departement">Département (<?php echo sizeof($departements) ?>) : </label>
+                        <label for="departement">D&eacute;partement (<?php echo sizeof($departements) ?>) : </label>
                         <select name="departement" class="form-control">
                             <option value="">Choisir un d&eacute;partement</option>
                             <?php
@@ -182,7 +182,7 @@ if (sizeof($communes) == 1) {
                             ?>
                         </select>
                         <br>
-                        <button type="submit" class="btn btn-block btn-primary">Afficher les communes du département
+                        <button type="submit" class="btn btn-block btn-primary">Afficher les communes du d&eacute;partement
                         </button>
                     </form>
                     <?php
@@ -238,9 +238,9 @@ if (sizeof($communes) == 1) {
                             <h1><?php echo $infosCommune["nom"] ?></h1>
                         </div>
                         <div class='col-xs-4 cadreAGauche'>
-                            Région : <a
+                            R&eacute;gion : <a
                                     href='tp2.php?region=<?php echo $infosCommune["codeRegion"] ?>'><?php echo $infosCommune["codeRegion"] . " - " . $region["nom"] ?></a><br/><br/>
-                            Département : <a
+                            D&eacute;partement : <a
                                     href='tp2.php?departement=<?php echo $infosCommune["codeDepartement"] ?>'><?php echo $infosCommune["codeDepartement"] . " - " . $departement["nom"] ?></a><br/><br/>
                             Commune : <?php echo $infosCommune["code"] . " - " . $infosCommune["nom"] ?><br/><br/>
                             Code SIREN : <?php echo $infosCommune["siren"] ?><br/>
@@ -249,7 +249,7 @@ if (sizeof($communes) == 1) {
                         if (isset($infosCommune["codeEpci"])) {
                             ?>
                             <div class='col-xs-4 cadreAGauche'>
-                                Communauté de communes : <br>
+                                Communaut&eacute; de communes : <br>
                                 <?php echo $infosComCom["nom"] ?><br>
                                 <?php echo $infosComCom["population"] ?> habitants<br><br>
                                 Communes :

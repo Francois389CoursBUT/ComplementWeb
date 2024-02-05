@@ -1,0 +1,38 @@
+/* Code CSS à écrire */
+
+
+.cadresCom{
+	border-width:5px;			/* Epaisseur de bordure */	
+	border-color:black;			/* Couleur de la bordure */	
+	text-align: center; 		/* Allignement du texte */
+	font-size:1.2em;
+	background-color:#0053B3;
+	color:white;
+}
+
+.hauteurMin{
+	height:200px;
+}
+
+.hauteurMinResultat{
+	/* min-height:10550px; */
+}
+
+.cadreAGauche {
+	text-align:left;
+}	
+
+a {
+	color:white;
+	text-decoration: underline;
+}
+
+a:hover {
+    color: grey;
+}
+	
+
+
+
+
+
